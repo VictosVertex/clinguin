@@ -1,0 +1,31 @@
+<div #theSlider class="slider-container">
+  <span>{{ minValue }}</span>
+  <div class="slider">
+     <div class="range-track"></div>   
+     <div class="range-track-selection bg-primary bg-opacity-25"
+        [style.left.%]="trackLeft"
+         [style.width.%]="trackWidth">  
+    </div>
+    <input
+      type="range"
+      #theMinRange
+      name="range-min"
+      min="{{ min }}"
+      max="{{ max }}"
+      value="{{ minValue }}"
+      class="range-slider"
+      (input)="updateValue('min', $event.target)"
+    />
+    <input
+      type="range"
+      #theMaxRange
+      name="range-max"
+      min="{{ min }}"
+      max="{{ max }}"
+      value="{{ maxValue }}"
+      class="range-slider"
+      (input)="updateValue('max', $event.target)"
+    />
+  </div>
+  <span>{{ maxValue }}</span>
+</div>

@@ -39,3 +39,8 @@ No worries! Clinguin can be extended with different functionalities and even fro
 - Python (version 3.8, 3.9, or 3.10)
 
 For instructions to install from source, pip and conda see our [documentation page](https://clinguin.readthedocs.io/en/latest/clinguin/installation.html).
+
+
+
+
+python start.py server --domain-files examples/angular/range/instance.lp examples/angular/range/encoding.lp --ui-files examples/angular/range/ui.lp --log-level=DEBUG
